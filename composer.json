@@ -1,0 +1,66 @@
+{
+    "name": "sixincode/six-core",
+    "description": "6ixin core package",
+    "keywords": [
+        "sixincode",
+        "laravel",
+        "six-core"
+    ],
+    "homepage": "https://github.com/sixincode/six-core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aalexkarim",
+            "email": "alex@6ixin.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^9.0",
+        "sixincode/modules-init": "^1.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sixincode\\SixCore\\": "src",
+            "Sixincode\\SixCore\\Database\\Factories\\": "database/factories"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sixincode\\SixCore\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sixincode\\SixCore\\SixCoreServiceProvider"
+            ],
+            "aliases": {
+                "SixCore": "Sixincode\\SixCore\\Facades\\SixCore"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
