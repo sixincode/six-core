@@ -13,9 +13,22 @@ return [
   */
 
   'blade' => [
-    'central' => [
-      //
-     ],
+    'layout'         => SixCoreComponents\Layouts\Layout::class,
+    'layout-app'     => SixCoreComponents\Layouts\LayoutApp::class,
+    'layout-admin'   => SixCoreComponents\Layouts\LayoutAdmin::class,
+
+    'header'         => SixCoreComponents\Partials\Footers\Header::class,
+    'footer'         => SixCoreComponents\Partials\Footers\Footer::class,
+
+    'central-landing'       => SixCoreComponents\Central\Landing::class,
+    'central-automation'    => SixCoreComponents\Central\Automation::class,
+    'central-blog'          => SixCoreComponents\Central\Blog::class,
+    'central-contact'       => SixCoreComponents\Central\Contact::class,
+    'central-domains'       => SixCoreComponents\Central\Domains::class,
+    'central-help'          => SixCoreComponents\Central\Help::class,
+    'central-hosting'       => SixCoreComponents\Central\Hosting::class,
+    'central-marketing'     => SixCoreComponents\Central\Marketing::class,
+
     ],
   /*
   |--------------------------------------------------------------------------

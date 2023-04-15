@@ -18,6 +18,7 @@
     "require": {
         "php": "^8.1",
         "illuminate/contracts": "^9.0",
+        "sixincode/hive-alpha": "^1.0",
         "sixincode/modules-init": "^1.0"
     },
     "require-dev": {
@@ -49,7 +50,10 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
     },
     "extra": {
         "laravel": {
@@ -61,6 +65,40 @@
             }
         }
     },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/sixincode/modules-init.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-alpha.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-stream.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-display.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-helpers.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-community.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-posts.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/sixincode/hive-form.git"
+      }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

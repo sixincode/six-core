@@ -8,7 +8,7 @@ Route::middleware(
 )->name('central.')->group(function () {
 
   Route::get('/',         [Controllers\LandingController::class, 'mainLanding'])->name('landing');
-  Route::get('/automation',     [Controllers\AutomationController::class, 'mainAutomation'])->name('automation');
+  Route::get('/automation',    [Controllers\AutomationController::class, 'mainAutomation'])->name('automation');
   Route::get('/blog',     [Controllers\BlogController::class, 'mainBlog'])->name('blog');
   Route::get('/careers',  [Controllers\CareersController::class, 'mainCareers'])->name('careers');
   Route::get('/contact',  [Controllers\ContactController::class, 'mainContact'])->name('contact');

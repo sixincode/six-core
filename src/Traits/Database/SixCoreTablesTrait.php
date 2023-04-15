@@ -25,7 +25,6 @@ trait SixCoreTablesTrait
     $table->addAlphaModelFields($table);
     $table->slugField('code');
     $table->isFeaturedField();
-    $table->isDefaultField();
     $table->isPrivateField();
     $table->sortOrderField();
   }
