@@ -2,7 +2,7 @@
 
 // config for Sixincode/SixCore
 return [
-  'central' = > [
+  'central' => [
     'default' => ['web'],
   ],
 ];
