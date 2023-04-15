@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixincode\SixCore\Http\Livewire\Central\Discover;
+namespace Sixincode\SixCore\Http\Livewire\Central\Domains;
 
 use Livewire\Component;
 

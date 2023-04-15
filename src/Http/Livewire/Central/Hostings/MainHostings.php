@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixincode\SixCore\Http\Livewire\Central\Help;
+namespace Sixincode\SixCore\Http\Livewire\Central\Hostings;
 
 use Livewire\Component;
 
