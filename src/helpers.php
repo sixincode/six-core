@@ -1,8 +1,5 @@
 <?php
-// if (! function_exists('xxxxxxx')) {
-//     /** Create a function. */
-//     function xxxxxxx()
-//     {
-//         return;
-//     }
-// }
+  // function base_layouts()
+  // {
+  //     return 'six-core::components';
+  // }

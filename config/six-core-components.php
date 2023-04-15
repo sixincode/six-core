@@ -1,7 +1,7 @@
 <?php
 
 use Sixincode\SixCore\Http\Livewire   as SixCoreLivewire;
-use Sixincode\SixCore\Http\Components as SixCoreComponents;
+use Sixincode\SixCore\Components as SixCoreComponents;
 
 return [
   /*
@@ -13,14 +13,13 @@ return [
   */
 
   'blade' => [
-    'layout'         => SixCoreComponents\Layouts\Layout::class,
-    'layout-app'     => SixCoreComponents\Layouts\LayoutApp::class,
-    'layout-admin'   => SixCoreComponents\Layouts\LayoutAdmin::class,
-
     'header'         => SixCoreComponents\Partials\Footers\Header::class,
     'footer'         => SixCoreComponents\Partials\Footers\Footer::class,
 
-    'central-landing'       => SixCoreComponents\Central\Landing::class,
+    'central-landing-top'       => SixCoreComponents\Central\Landing\TopLanding::class,
+    'central-landing-services'  => SixCoreComponents\Central\Landing\servicesLanding::class,
+    'central-landing-faq'       => SixCoreComponents\Central\Landing\FaqLanding::class,
+
     'central-automation'    => SixCoreComponents\Central\Automation::class,
     'central-blog'          => SixCoreComponents\Central\Blog::class,
     'central-contact'       => SixCoreComponents\Central\Contact::class,
@@ -39,7 +38,6 @@ return [
   */
   'livewire' => [
     'central-landing-main'     => SixCoreLivewire\Central\Landing\MainLanding::class,
-
     'central-automation-main'  => SixCoreLivewire\Central\Automation\MainAutomation::class,
     'central-blog-main'        => SixCoreLivewire\Central\Blog\MainBlog::class,
     'central-careers-main'     => SixCoreLivewire\Central\Careers\MainCareers::class,

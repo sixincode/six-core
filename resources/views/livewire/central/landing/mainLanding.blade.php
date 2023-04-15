@@ -1,5 +1,5 @@
-<x-six-core-layout>
-  <x-six-core-central-landing.topLanding />
-  <x-six-core-central-landing.servicesLanding />
-  <x-six-core-central-landing.faqLanding />
-</x-six-core-layout>
+<x-hive-display-layout>
+  <x-six-core-central-landing-top />
+  <x-six-core-central-landing-services />
+  <x-six-core-central-landing-faq />
+</x-hive-display-layout>

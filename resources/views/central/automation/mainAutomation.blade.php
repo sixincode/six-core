@@ -1,3 +1,4 @@
-<x-six-core-layout>
+<x-hive-display-layout>
   @livewire('six-core-central-automation-main')
-</x-six-core-layout>
+  
+</x-hive-display-layout>
