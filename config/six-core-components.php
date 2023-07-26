@@ -16,9 +16,13 @@ return [
     'header'         => SixCoreComponents\Partials\Footers\Header::class,
     'footer'         => SixCoreComponents\Partials\Footers\Footer::class,
 
-    'central-landing-top'       => SixCoreComponents\Central\Landing\TopLanding::class,
-    'central-landing-services'  => SixCoreComponents\Central\Landing\servicesLanding::class,
-    'central-landing-faq'       => SixCoreComponents\Central\Landing\FaqLanding::class,
+    'central-landing-top'           => SixCoreComponents\Central\Landing\TopLanding::class,
+    'central-landing-features'      => SixCoreComponents\Central\Landing\FeaturesLanding::class,
+    'central-landing-services'      => SixCoreComponents\Central\Landing\ServicesLanding::class,
+    'central-landing-domain'        => SixCoreComponents\Central\Landing\DomainLanding::class,
+    'central-landing-faq'           => SixCoreComponents\Central\Landing\FaqLanding::class,
+    'central-landing-presentation'  => SixCoreComponents\Central\Landing\PresentationLanding::class,
+    'central-landing-smb'           => SixCoreComponents\Central\Landing\SmbLanding::class,
 
     'central-automation'    => SixCoreComponents\Central\Automation::class,
     'central-blog'          => SixCoreComponents\Central\Blog::class,

@@ -12,11 +12,11 @@ Route::middleware(
   Route::get('/blog',     [Controllers\BlogController::class, 'mainBlog'])->name('blog');
   Route::get('/careers',  [Controllers\CareersController::class, 'mainCareers'])->name('careers');
   Route::get('/contact',  [Controllers\ContactController::class, 'mainContact'])->name('contact');
-  Route::get('/discover', [Controllers\DiscoverController::class, 'mainDiscover'])->name('discover');
-  Route::get('/domains',  [Controllers\DomainsController::class, 'mainDomains'])->name('domains');
+  Route::get('/discover', [Controllers\DiscoverController::class, 'mainDiscover'])->name('discover.index');
+  Route::get('/domains',  [Controllers\DomainsController::class, 'mainDomains'])->name('domains.index');
   Route::get('/help',     [Controllers\HelpController::class, 'mainHelp'])->name('help');
-  Route::get('/hosting',  [Controllers\HostingsController::class, 'mainHostings'])->name('hostings');
-  Route::get('/marketing',[Controllers\MarketingController::class, 'mainMarketing'])->name('marketing');
+  Route::get('/hosting',  [Controllers\HostingsController::class, 'mainHostings'])->name('hostings.index');
+  Route::get('/marketing',[Controllers\MarketingController::class, 'mainMarketing'])->name('marketing.index');
   Route::get('/services', [Controllers\ServicesController::class, 'mainServices'])->name('services');
 
 
