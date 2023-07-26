@@ -20,9 +20,7 @@
         "illuminate/contracts": "^10.0",
         "sixincode/hive-alpha": "^1.10",
         "sixincode/hive-display": "^1.10",
-        "sixincode/hive-form": "^1.10",
-        "sixincode/hive-posts": "^1.10",
-        "sixincode/modules-init": "^1.0"
+        "sixincode/hive-posts": "dev-main"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
