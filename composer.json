@@ -21,7 +21,7 @@
         "sixincode/hive-alpha": "^1.10",
         "sixincode/hive-display": "^1.10",
         "sixincode/hive-posts": "dev-main",
-        "sixincode/modules-init": "dev-main",
+        "sixincode/modules-init": "^1.10",
         "sixincode/msx-namecheap": "dev-main"
     },
     "require-dev": {
