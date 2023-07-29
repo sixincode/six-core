@@ -11,4 +11,24 @@ class DomainsController extends Controller
     {
       return view('six-core::central.domains.mainDomains');
     }
+
+    public function findDomains()
+    {
+      return view('six-core::central.domains.findDomains');
+    }
+
+    public function transferDomains()
+    {
+      return view('six-core::central.domains.transferDomains');
+    }
+
+    public function extensionDomains()
+    {
+      return view('six-core::central.domains.extensionDomains');
+    }
+
+    public function whois()
+    {
+      return view('six-core::central.domains.whois');
+    }
 }

@@ -15,6 +15,7 @@ $iconClasses = ($current ?? false)
       path='{{$icon}}'
       width='6'
       height='6'
+      size='1.5'
       class=' '
       />
     </span>

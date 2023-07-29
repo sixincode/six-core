@@ -1,1 +1,1 @@
-<p>Domains Livewire</p>
+<p>Main Domains Livewire</p>

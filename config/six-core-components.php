@@ -32,6 +32,8 @@ return [
     'central-hosting'       => SixCoreComponents\Central\Hosting::class,
     'central-marketing'     => SixCoreComponents\Central\Marketing::class,
 
+    'domain-search'         => SixCoreComponents\Central\Domains\SearchDomain::class,
+
     ],
   /*
   |--------------------------------------------------------------------------
@@ -47,11 +49,17 @@ return [
     'central-careers-main'     => SixCoreLivewire\Central\Careers\MainCareers::class,
     'central-contact-main'     => SixCoreLivewire\Central\Contact\MainContact::class,
     'central-discover-main'    => SixCoreLivewire\Central\Discover\MainDiscover::class,
-    'central-domains-main'     => SixCoreLivewire\Central\Domains\MainDomains::class,
+
     'central-help-main'        => SixCoreLivewire\Central\Help\MainHelp::class,
     'central-hostings-main'    => SixCoreLivewire\Central\Hostings\MainHostings::class,
     'central-marketing-main'   => SixCoreLivewire\Central\Marketing\MainMarketing::class,
     'central-services-main'    => SixCoreLivewire\Central\Services\MainServices::class,
+
+    'central-domains-main'     => SixCoreLivewire\Central\Domains\MainDomains::class,
+    'central-domains-find'     => SixCoreLivewire\Central\Domains\FindDomains::class,
+    'central-domains-whois'    => SixCoreLivewire\Central\Domains\WhoisDomains::class,
+    'central-domains-tld'      => SixCoreLivewire\Central\Domains\TldDomains::class,
+    'central-domains-transfer' => SixCoreLivewire\Central\Domains\TransferDomains::class,
 
    ],
 

@@ -1,17 +1,46 @@
 <div class="">
-  <x-hive-display-section class="py-12 md:py-24">
     <x-hive-display-section component='boxedSection'>
-      <div class="text-center max-w-lg mx-auto">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">6ixin is for everyone.</h2>
-        <p class="mt-4">No matter if you need a domain name for your blog, portfolio, online store or simply want a more memorable way to redirect people to your LinkedIn page, we have everything you need.</p>
+      <section>
+        <div class="mx-auto py-8 lg:py-16">
+          <div class="grid grid-cols-1 lg:grid-cols-3">
+            <div class="relative z-10 lg:py-12">
+              <div class="relative h-64 sm:h-80 lg:h-full">
+                <img
+                  alt="House"
+                  src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  class="absolute inset-0 h-full w-full object-cover lg:rounded-lg"
+                />
+              </div>
+            </div>
 
-      </div>
-      <div class="grid md:grid-cols-12 gap-4 md:gap-8">
-        <div class="md:col-span-7">
+            <div class="relative flex items-center bg-slate-50 lg:rounded-r-lg lg:col-span-2">
+              <span
+                class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-slate-50 lg:rounded-l-lg"
+              ></span>
+
+              <div class="p-8 sm:p-16 lg:p-24">
+                <h2 class="text-2xl font-bold sm:text-3xl">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                  debitis.
+                </h2>
+
+                <p class="mt-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+                  molestiae! Quidem est esse numquam odio deleniti, beatae, magni
+                  dolores provident quaerat totam eos, aperiam architecto eius quis
+                  quibusdam fugiat dicta.
+                </p>
+
+                <a
+                  href="#"
+                  class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                >
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="md:col-span-5">
-        </div>
-      </div>
-    </x-hive-display-section>
+      </section>
   </x-hive-display-section>
 </div>

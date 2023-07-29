@@ -11,4 +11,24 @@ class MarketingController extends Controller
     {
       return view('six-core::central.marketing.mainMarketing');
     }
+
+    public function emailsMarketing()
+    {
+      return view('six-core::central.marketing.emailsMarketing');
+    }
+
+    public function referralsMarketing()
+    {
+      return view('six-core::central.marketing.referralsMarketing');
+    }
+
+    public function seoMarketing()
+    {
+      return view('six-core::central.marketing.seoMarketing');
+    }
+
+    public function analyticsMarketing()
+    {
+      return view('six-core::central.marketing.analyticsMarketing');
+    }
 }

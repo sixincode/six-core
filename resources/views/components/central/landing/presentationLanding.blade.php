@@ -1,50 +1,84 @@
 <div class="">
   <x-hive-display-section class="bg-slate-50 py-12 md:py-24">
     <x-hive-display-section component='boxedSection'>
-      <div class="grid md:grid-cols-12 gap-4 md:gap-8">
-        <div class="md:col-span-5">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Why pick 6ixin?</h2>
-          <p class="mt-6 text-lg leading-8 text-gray-700">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
-          </p>
-        </div>
-        <div class="md:col-span-7">
-          <div class="grid gap-4">
-            <!-- Domain -->
-            <x-hive-display-card component="plex.pill" class="inline-flex space-x-4">
+      <div class="grid md:grid-cols-3 gap-4 md:gap-8">
+        <!-- Domains -->
+        <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
+          <x-slot name="image">
+            <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Domains')}}">
+          </x-slot>
+          <x-slot name="title">
+            {{_('Buy a Domain')}}
+          </x-slot>
+             Find a domain for your web visibility
+         </x-hive-display-link >
+
+
+         <!-- Websites -->
+         <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
+           <x-slot name="image">
+             <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Websites')}}">
+           </x-slot>
+           <x-slot name="title">
+             {{_('Build your Website')}}
+           </x-slot>
+              Find a domain for your web visibility
+          </x-hive-display-link >
+
+
+
+          <!-- Hostings -->
+          <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
+            <x-slot name="image">
+              <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Hostings')}}">
+            </x-slot>
+            <x-slot name="title">
+              {{_('Find the right Hosting')}}
+            </x-slot>
+               Find a domain for your web visibility
+           </x-hive-display-link >
+
+
+
+           <!-- Email -->
+           <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
+             <x-slot name="image">
+               <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Email')}}">
+             </x-slot>
+             <x-slot name="title">
+               {{_('Create a professional Email')}}
+             </x-slot>
+                Find a domain for your web visibility
+            </x-hive-display-link >
+
+
+
+            <!-- Marketing -->
+            <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
               <x-slot name="image">
-                <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Domain')}}">
+                <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Marketing')}}">
               </x-slot>
               <x-slot name="title">
-                {{_('Domains')}}
+                {{_('Boost your business')}}
               </x-slot>
                  Find a domain for your web visibility
-             </x-hive-display-card >
+             </x-hive-display-link >
 
-             <!-- Hosting -->
-             <x-hive-display-card component="plex.pill" class="inline-flex space-x-4">
+
+
+             <!-- Bundles -->
+             <x-hive-display-link   base='six-core::components' source='cards' component="stageShow">
                <x-slot name="image">
-                 <img src="{{asset('/six-core/img/hosting0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Domain')}}">
+                 <img src="{{asset('/six-core/img/domain0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Bundles')}}">
                </x-slot>
                <x-slot name="title">
-                 {{_('Hosting')}}
+                 {{_('Bundles')}}
                </x-slot>
-                  Host your plateform with full availability and scalability services
-              </x-hive-display-card >
+                  Find a domain for your web visibility
+              </x-hive-display-link >
 
-              <!-- Marketing -->
-              <x-hive-display-card component="plex.pill" class="inline-flex space-x-4">
-                <x-slot name="image">
-                  <img src="{{asset('/six-core/img/marketing0.jpg')}}" class="rounded-full w-12 h-12" alt="{{__('Domain')}}">
-                </x-slot>
-                <x-slot name="title">
-                  {{_('Marketing')}}
-                </x-slot>
-                   Promote and increase your platfrom visibility
-               </x-hive-display-card >
 
-          </div>
-         </div>
+
 
       </div>
 

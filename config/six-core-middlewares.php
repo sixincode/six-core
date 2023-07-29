@@ -4,5 +4,6 @@
 return [
   'central' => [
     'default' => ['web'],
+    'api'     => ['web'],
   ],
 ];
