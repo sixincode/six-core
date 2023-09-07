@@ -13,6 +13,6 @@ class TransferDomains extends Component
 
   public function render()
   {
-    return view('six-core::livewire.central.domains.transferDomains');
+    return view('six-core::livewire.central.domains.transfer.transferDomains');
   }
 }

@@ -6,11 +6,17 @@ return [
     'identification'     => 'six-core',
     'models'             => [
       'domain'                      => Sixincode\SixCore\Models\Domain::class,
+      'email'                       => Sixincode\SixCore\Models\Email::class,
+      'hosting'                     => Sixincode\SixCore\Models\Hosting::class,
+      'server'                      => Sixincode\SixCore\Models\Server::class,
       'service'                     => Sixincode\SixCore\Models\Service::class,
       'tld'                         => Sixincode\SixCore\Models\Tld::class,
      ],
     'table_names'        => [
       'domains'                     => 'domains',
+      'emails'                      => 'emails',
+      'hostings'                    => 'hostings',
+      'servers'                     => 'servers',
       'services'                    => 'services',
       'tlds'                        => 'tlds',
      ],

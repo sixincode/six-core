@@ -26,6 +26,7 @@
   <div class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
     <div class="menuSlogan flex flex-shrink-0 items-center">
       <a href="/">
+        <span class="sr-only">{{env('APP_NAME', '6ix Innovation')}}</span>
         <x-hive-form-icon
          path='6ixin'
          width='10'

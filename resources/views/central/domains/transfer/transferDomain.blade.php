@@ -2,5 +2,5 @@
   base='six-core::components'
   source='layouts'
   component='main.operationLayout'>
-  @livewire('six-core-central-domains-find',[ 'data' => $data])
+  @livewire('six-core-central-domains-transfer')
 </x-hive-display-layout>

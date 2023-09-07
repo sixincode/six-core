@@ -8,6 +8,8 @@ use Sixincode\SixCore\Commands\SixCoreCommand;
 use Sixincode\HiveDisplay\Traits\RenderingViewTrait;
 use Illuminate\Support\Facades\Blade;
 use Livewire\Livewire;
+use Illuminate\Database\Schema\Blueprint;
+use Sixincode\SixCore\Traits\Database\SixCoreDatabaseTrait;
 
 class SixCoreServiceProvider extends PackageServiceProvider
 {
@@ -33,28 +35,34 @@ class SixCoreServiceProvider extends PackageServiceProvider
              // $this->publishes([
             //             $this->package->basePath("/../assets") => public_path("{$this->package->shortName()}"),
             //        ], "{$this->package->shortName()}-assets");
+
+            $this->registerSixCoreDatabaseMethods();
     }
 
-    // public function packageBooted()
-    // {
-    //   $this->bootSixCoreBladeAndLivewireComponents();
-    // }
-    //
+    private function registerSixCoreDatabaseMethods(): void
+    {
+      Blueprint::macro('addTldsFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addTldsFields($table, $properties);
+      });
 
-    // public function bootSixCoreBladeAndLivewireComponents()
-    // {
-    //    $prefix = config('six-core-components.prefix', 'six-core');
-    //
-    //    foreach (config('six-core-components.livewire', []) as $alias => $component)
-    //    {
-    //       $alias = $prefix ? "$prefix-$alias" : $alias;
-    //       Livewire::component($alias, $component);
-    //     }
-    //
-    //    foreach (config('six-core-components.blade', []) as $alias => $component)
-    //    {
-    //       $alias = $prefix ? "$prefix-$alias" : $alias;
-    //       Blade::component($alias, $component);
-    //     }
-    //  }
+      Blueprint::macro('addHostingsFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addHostingsFields($table, $properties);
+      });
+
+      Blueprint::macro('addServersFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addServersFields($table, $properties);
+      });
+
+      Blueprint::macro('addEmailsFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addEmailsFields($table, $properties);
+      });
+
+      Blueprint::macro('addDomainsFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addDomainsFields($table, $properties);
+      });
+
+      Blueprint::macro('addServicesFields', function (Blueprint $table, $properties = []) {
+        SixCoreDatabaseTrait::addServicesFields($table, $properties);
+      });
+    }
 }

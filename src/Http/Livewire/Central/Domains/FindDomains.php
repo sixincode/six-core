@@ -8,14 +8,17 @@ class FindDomains extends Component
 {
   public $domainToInquire;
   public bool $inquireAvailability;
+  public array $data;
 
   public function mount(
     $domainToInquire = null,
     $inquireAvailability = false,
+    $data = [],
     )
   {
     $this->domainToInquire = $domainToInquire;
     $this->inquireAvailability = $inquireAvailability;
+    $this->data = $data;
   }
 
   public function render()

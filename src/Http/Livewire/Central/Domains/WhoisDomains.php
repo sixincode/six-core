@@ -13,7 +13,7 @@ class WhoisDomains extends Component
 
   public function render()
   {
-    return view('six-core::livewire.central.domains.whoisDomains');
+    return view('six-core::livewire.central.domains.whois.whoisDomains');
   }
 
 }
