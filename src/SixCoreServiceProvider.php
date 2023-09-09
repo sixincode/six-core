@@ -9,7 +9,7 @@ use Sixincode\HiveDisplay\Traits\RenderingViewTrait;
 use Illuminate\Support\Facades\Blade;
 use Livewire\Livewire;
 use Illuminate\Database\Schema\Blueprint;
-use Sixincode\SixCore\Traits\Database\SixCoreDatabaseTrait;
+use Sixincode\SixCore\Traits\Database as DatabaseTraits;
 
 class SixCoreServiceProvider extends PackageServiceProvider
 {
@@ -42,27 +42,27 @@ class SixCoreServiceProvider extends PackageServiceProvider
     private function registerSixCoreDatabaseMethods(): void
     {
       Blueprint::macro('addTldsFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addTldsFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addTldsFields($table, $properties);
       });
 
       Blueprint::macro('addHostingsFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addHostingsFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addHostingsFields($table, $properties);
       });
 
       Blueprint::macro('addServersFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addServersFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addServersFields($table, $properties);
       });
 
       Blueprint::macro('addEmailsFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addEmailsFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addEmailsFields($table, $properties);
       });
 
       Blueprint::macro('addDomainsFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addDomainsFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addDomainsFields($table, $properties);
       });
 
       Blueprint::macro('addServicesFields', function (Blueprint $table, $properties = []) {
-        SixCoreDatabaseTrait::addServicesFields($table, $properties);
+        DatabaseTraits\SixCoreDatabaseDefinitions::addServicesFields($table, $properties);
       });
     }
 }

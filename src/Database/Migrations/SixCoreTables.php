@@ -2,12 +2,13 @@
 
 namespace Sixincode\SixCore\Database\Migrations;
 
-use Illuminate\Database\Seeder;
-
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 /**
  * @see \Sixincode\SixCore\SixCore
  */
- class SixCoreTables extends Seeder
+ class SixCoreTables extends Migration
  {
    public function up()
    {
@@ -23,37 +24,37 @@ use Illuminate\Database\Seeder;
 
      if(!Schema::hasTable($tableNames['tlds'])) {
        Schema::create('tlds', function (Blueprint $table) {
-           $table->addTldsFields();
+           $table->addTldsFields($table);
        });
      }
 
      if(!Schema::hasTable($tableNames['hostings'])) {
        Schema::create('hostings', function (Blueprint $table) {
-           $table->addHostingsFields();
+           $table->addHostingsFields($table);
        });
      }
 
      if(!Schema::hasTable($tableNames['servers'])) {
        Schema::create('servers', function (Blueprint $table) {
-           $table->addServersFields();
+           $table->addServersFields($table);
        });
      }
 
      if(!Schema::hasTable($tableNames['emails'])) {
        Schema::create('emails', function (Blueprint $table) {
-           $table->addEmailsFields();
+           $table->addEmailsFields($table);
        });
      }
 
      if(!Schema::hasTable($tableNames['domains'])) {
        Schema::create('domains', function (Blueprint $table) {
-           $table->addDomainsFields();
+           $table->addDomainsFields($table);
        });
      }
 
      if(!Schema::hasTable($tableNames['services'])) {
        Schema::create('services', function (Blueprint $table) {
-           $table->addServicesFields();
+           $table->addServicesFields($table);
        });
      }
    }

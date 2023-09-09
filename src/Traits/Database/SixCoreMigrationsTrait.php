@@ -2,31 +2,33 @@
 
 namespace Sixincode\SixCore\Traits\Database;
 
-use Sixincode\HiveAlpha\SixCore\Migrations as Migrations;
+use Sixincode\SixCore\Database\Migrations as Migrations;
 
 trait SixCoreMigrationsTrait
 {
   public function migrateUp(): void
   {
-    Migrations\SixCoreTables::up();
+    $migration = new Migrations\SixCoreTables;
+    $migration->up();
   }
 
   public function migrateUpAll(): void
   {
     \HiveAlpha::migrateUp();
     \HivePosts::migrateUp();
-    Migrations\SixCoreTables::up();
+    $this->migrateUp();
   }
 
   public function migrateDown(): void
   {
-    Migrations\SixCoreTables::down();
+    $migration = new Migrations\SixCoreTables;
+    $migration->down();
   }
 
   public function migrateDownAll(): void
   {
     \SixCore::migrateTldsDown();
     \HivePosts::migrateDown();
-    Migrations\SixCoreTables::down();
+    $this->migrateDown();
   }
 }
