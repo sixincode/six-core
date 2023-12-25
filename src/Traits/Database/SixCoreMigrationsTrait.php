@@ -27,8 +27,8 @@ trait SixCoreMigrationsTrait
 
   public function migrateDownAll(): void
   {
-    \SixCore::migrateTldsDown();
     \HivePosts::migrateDown();
+    \HiveAlpha::migrateDown();
     $this->migrateDown();
   }
 }

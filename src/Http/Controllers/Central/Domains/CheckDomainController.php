@@ -17,8 +17,16 @@ class CheckDomainController extends Controller
     public function checkDomains(CheckDomainRequest $request)
     {
       $data = [];
+      
+      if (whoisInit()->isDomainAvailable($request['domain_search'])) {
+          return ;
+      }
+
       $domain = whois()->verifyDomain($request['domain_search']);
-      $result = Http::get(route('api.msx-namecheap.central.domains.check', $domain));
+
+      // $result = Http::get(route('api.msx-namecheap.central.domains.check', $domain));
+      $result = Http::get("https://api.sandbox.namecheap.com/xml.response?ApiUser=6ixin&ApiKey=4cffc31b9b384d20b06f429dac52683f&UserName=6ixin&Command=namecheap.domains.check&ClientIp=69.159.169.41&DomainList=rds.ca");
+      dd($result);
       $data   = $result['ApiResponse']['CommandResponse']['DomainCheckResult'];
       // dd($data['ApiResponse'] );
       return view('six-core::central.domains.findDomains', [

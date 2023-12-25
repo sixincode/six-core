@@ -3,13 +3,9 @@
 namespace Sixincode\SixCore\Traits\Database;
 
 use Illuminate\Database\Schema\Blueprint;
-use Sixincode\HiveHelpers\Traits\FieldsTrait;
-use Sixincode\HiveAlpha\Traits\HiveAlphaDatabase;
 
 trait SixCoreTablesTrait
 {
-  use FieldsTrait, HiveAlphaDatabase;
-
   public static function addServicesFields(Blueprint $table , $properties =[]): void
   {
     $table->addAlphaModelFields($table);

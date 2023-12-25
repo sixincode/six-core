@@ -5,9 +5,6 @@ namespace Sixincode\SixCore;
 use Sixincode\ModulesInit\Package;
 use Sixincode\ModulesInit\PackageServiceProvider;
 use Sixincode\SixCore\Commands\SixCoreCommand;
-use Sixincode\HiveDisplay\Traits\RenderingViewTrait;
-use Illuminate\Support\Facades\Blade;
-use Livewire\Livewire;
 use Illuminate\Database\Schema\Blueprint;
 use Sixincode\SixCore\Traits\Database as DatabaseTraits;
 
@@ -32,9 +29,6 @@ class SixCoreServiceProvider extends PackageServiceProvider
             ->hasMigration('create_six-core_table')
             ->runsMigrations()
             ->hasCommand(SixCoreCommand::class);
-             // $this->publishes([
-            //             $this->package->basePath("/../assets") => public_path("{$this->package->shortName()}"),
-            //        ], "{$this->package->shortName()}-assets");
 
             $this->registerSixCoreDatabaseMethods();
     }
