@@ -10,7 +10,6 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.9.0/cdn.min.js" defer></script>
         <script src="https://cdn.tailwindcss.com"></script>
         @livewireStyles
         @stack('styles')
