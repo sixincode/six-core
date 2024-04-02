@@ -5,7 +5,7 @@
     <div class="">
       <dl class="grid grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3 lg:gap-12">
 
-              <div class="relative pl-14 bg-white/70 p-4 rounded-md pt-0">
+              <div class="relative pl-14 max-w-md bg-white/70 p-4 rounded-md pt-0">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -15,11 +15,11 @@
                   Push to deploy
                 </dt>
                 <dd class="mt-2 text-base leading-7 text-gray-600">
-                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.
+                  Effortlessly launch your website with the simplicity of a push of a button. <br>Elevate your online presence instantly.
                 </dd>
               </div>
 
-              <div class="relative pl-14 bg-white/70 p-4 rounded-md pt-0">
+              <div class="relative pl-14 max-w-md bg-white/70 p-4 rounded-md pt-0">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -29,11 +29,11 @@
                   High Privacy and Security
                 </dt>
                 <dd class="mt-2 text-base leading-7 text-gray-600">
-                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.
+                  Your digital platform and presence is safeguarded with cutting-edge technology and unwavering commitment.
                 </dd>
               </div>
 
-              <div class="relative pl-14 bg-white/70 p-4 rounded-md pt-0">
+              <div class="relative pl-14 max-w-md bg-white/70 p-4 rounded-md pt-0">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -42,7 +42,9 @@
                   </div>
                   Full performance and support
                 </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</dd>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  We converge speed, reliability, and expert assistance to propel your digital platform and online presence to new heights.
+                </dd>
               </div>
 
 
@@ -53,4 +55,17 @@
       </x-hive-display-section>
     </x-hive-display-section>
 
+
+    <div class="relative">
+      <div class="absolute -top-1 w-full rotate-180">
+        <svg class="w-full h-full" viewBox="0 0 1440 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="shape-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="curve" fill="white">
+              <path d="M0,30.013 C239.659,10.004 479.143,0 718.453,0 C957.763,0 1198.28,10.004 1440,30.013 L1440,40 L0,40 L0,30.013 Z" id="Path">
+              </path><
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
 </div>

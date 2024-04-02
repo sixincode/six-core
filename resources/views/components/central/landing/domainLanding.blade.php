@@ -1,27 +1,330 @@
-<section class="py-20 bg-gray-50">
-  <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-    <div class="flex flex-wrap items-center -mx-3">
-      <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
-        <div class="w-full lg:max-w-md">
-          <h2 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Jam-packed with all the tools you need to succeed!</h2>
-          <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">It's never been easier to build a business of your own. Our tools will help you with the following:</p>
-          <ul>
-            <li class="flex items-center py-2 space-x-4 xl:py-3">
-              <svg class="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-              <span class="font-medium text-gray-500">Faster Processing and Delivery</span>
-            </li>
-            <li class="flex items-center py-2 space-x-4 xl:py-3">
-              <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-              <span class="font-medium text-gray-500">Out of the Box Tracking and Monitoring</span>
-            </li>
-            <li class="flex items-center py-2 space-x-4 xl:py-3">
-              <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-              <span class="font-medium text-gray-500">100% Protection and Security for Your App</span>
-            </li>
-          </ul>
+<div class="py-20">
+    <x-hive-display-section component='boxedSection'>
+      <section>
+        <div class="grid sm:grid-cols-3 gap-8 mx-auto py-8 lg:py-16 items-center">
+          <div class="">
+            <img
+              alt="Pick domain"
+              src="{{asset('/vendor/six-core/img/dmn_pck_9.jpg')}}"
+              class="inset-0 h-full w-full object-cover lg:rounded-lg"
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <h2 class="text-2xl font-bold sm:text-3xl">
+            HOW TO CHOOSE THE RIGHT DOMAIN
+            </h2>
+            <p class="text-xl mt-3 sm:text-2xl">
+            Get to know helpful tips for picking the perfect domain.
+            </p>
+
+
+            <ul class="mt-6 ml-6">
+              <li class="flex items-center gap-3 mt-2">
+                <span class="p-1 bg-[#007cfe] text-white rounded-full">
+                  <x-hive-form-icon
+                    path='check'
+                    width='2.5'
+                    height='2.5'
+                    size='2'
+                    />
+                  </span>
+
+                    <span>Keep your name easy to remember</span>
+                  </li>
+              <li class="flex items-center gap-3 mt-2">
+                <span class="p-1 bg-[#007cfe] text-white rounded-full">
+                  <x-hive-form-icon
+                    path='check'
+                    width='2.5'
+                    height='2.5'
+                    size='2'
+                    />
+                  </span>
+                <span>Choose a name that fits your brand</span>
+              </li>
+              <li class="flex items-center gap-3 mt-2">
+                <span class="p-1 bg-[#007cfe] text-white rounded-full">
+                  <x-hive-form-icon
+                    path='check'
+                    width='2.5'
+                    height='2.5'
+                    size='2'
+                    />
+                  </span>
+                <span>Register alternative TLDs for brand protection</span>
+              </li>
+              <li class="flex items-center gap-3 mt-2">
+                <span class="p-1 bg-[#007cfe] text-white rounded-full">
+                  <x-hive-form-icon
+                    path='check'
+                    width='2.5'
+                    height='2.5'
+                    size='2'
+                    />
+                  </span>
+                <span>Register common domain misspellings</span>
+              </li>
+            </ul>
+
+            <div class="mt-6 flex items-center gap-x-6">
+              <x-hive-display-button-array tag="a" class="pl-0 font-semibold leading-6" text_color="text-blue-500 hover:text-blue-600" textSize="regular" color="line">
+                Learn more
+              </x-hive-display-button-array>
+
+            </div>
+          </div>
+        </div>
+      </section>
+  </x-hive-display-section>
+</div>
+<div class="py-20 bg-gray-50">
+  <x-hive-display-section component='boxedSection'>
+    <div class="grid sm:grid-cols-3 gap-8 mx-auto py-8 lg:py-16 items-center">
+      <div class="sm:col-span-2">
+        <h2 class="text-2xl font-bold sm:text-3xl capitalize">
+        WEB HOSTING FOR PROFESSIONALS AND AGENCIES
+        </h2>
+        <p class="text-xl mt-3 sm:text-2xl">
+        Woth powerful, fast, and easy to use servers, With maximum performance and a guarantee of uptime, you can enjoy the steady growth of your business and always have happy customers.
+        </p>
+        <ul class="mt-6 ml-6 list-disc">
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>99.9% uptime guarantee.</span>
+              </li>
+
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Keep your files secure with automatic backups.</span>
+              </li>
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Enhance website security with Cloudflare Protected Nameservers.</span>
+              </li>
+
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Start small and scale when you outgrow your plan.</span>
+              </li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-x-6">
+          <x-hive-display-button-array tag="a" class="pl-0 font-semibold leading-6" text_color="text-blue-500 hover:text-blue-600" textSize="regular" color="line">
+            Learn more
+          </x-hive-display-button-array>
+
         </div>
       </div>
-      <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img class="mx-auto sm:max-w-sm lg:max-w-full" src="https://d2pas86kykpvmq.cloudfront.net/images/humans-3.0/together_with_digital_icons.png" alt="feature image"></div>
+      <div class="">
+        <img
+          alt="Pick domain"
+          src="{{asset('/vendor/six-core/img/serv_host_9t.png')}}"
+          class="inset-0 h-full w-full object-cover lg:rounded-lg"
+        />
+      </div>
     </div>
-  </div>
-</section>
+  </x-hive-display-section>
+
+</div>
+
+<div class="py-20">
+  <x-hive-display-section component='boxedSection'>
+    <div class="grid sm:grid-cols-3 gap-8 mx-auto py-8 lg:py-16 items-center">
+      <div class="">
+        <img
+          alt="Pick domain"
+          src="{{asset('/vendor/six-core/img/sec_oln_9.jpg')}}"
+          class="inset-0 h-full w-full object-cover lg:rounded-lg"
+        />
+      </div>
+      <div class="sm:col-span-2">
+        <h2 class="text-2xl font-bold sm:text-3xl">
+        ADVANCED SECURITY FEATURES
+        </h2>
+        <p class="text-xl mt-3 sm:text-2xl">
+        We offer various solutions to protect your online presence and ensure your privacy.
+        </p>
+        <ul class="mt-6 ml-6 list-disc">
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Get unlimited SSL security certificates to encrypt your websites’ traffic.</span>
+              </li>
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Protect your website from DDoS attacks with Cloudflare protected nameservers.</span>
+              </li>
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+                <span>Secure your files with automatic backups.</span>
+              </li>
+
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+                <span>Ensure your website is up and running with our 99.9% uptime guarantee.</span>
+              </li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-x-6">
+          <x-hive-display-button-array tag="a" class="pl-0 font-semibold leading-6" text_color="text-blue-500 hover:text-blue-600" textSize="regular" color="line">
+            Learn more
+          </x-hive-display-button-array>
+
+        </div>
+      </div>
+
+    </div>
+  </x-hive-display-section>
+
+</div>
+<div class="py-20 bg-gray-50">
+  <x-hive-display-section component='boxedSection'>
+    <div class="grid sm:grid-cols-3 gap-8 mx-auto py-8 lg:py-16 items-center">
+      <div class="sm:col-span-2">
+        <h2 class="text-2xl font-bold sm:text-3xl capitalize">
+        WEB HOSTING FOR PROFESSIONALS AND AGENCIES
+        </h2>
+        <p class="text-xl mt-3 sm:text-2xl">
+        Woth powerful, fast, and easy to use servers, With maximum performance and a guarantee of uptime, you can enjoy the steady growth of your business and always have happy customers.
+        </p>
+        <ul class="mt-6 ml-6 list-disc">
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>99.9% uptime guarantee.</span>
+              </li>
+
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Keep your files secure with automatic backups.</span>
+              </li>
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Enhance website security with Cloudflare Protected Nameservers.</span>
+              </li>
+
+
+          <li class="flex items-center gap-3 mt-2">
+            <span class="p-1 bg-[#007cfe] text-white rounded-full">
+              <x-hive-form-icon
+                path='check'
+                width='2.5'
+                height='2.5'
+                size='2'
+                />
+              </span>
+
+                <span>Start small and scale when you outgrow your plan.</span>
+              </li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-x-6">
+          <x-hive-display-button-array tag="a" class="pl-0 font-semibold leading-6" text_color="text-blue-500 hover:text-blue-600" textSize="regular" color="line">
+            Learn more
+          </x-hive-display-button-array>
+
+        </div>
+      </div>
+      <div class="">
+        <img
+          alt="Pick domain"
+          src="{{asset('/vendor/six-core/img/serv_host_9t.png')}}"
+          class="inset-0 h-full w-full object-cover lg:rounded-lg"
+        />
+      </div>
+    </div>
+  </x-hive-display-section>
+
+</div>

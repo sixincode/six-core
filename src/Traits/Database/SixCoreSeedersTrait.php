@@ -8,18 +8,20 @@ trait SixCoreSeedersTrait
 {
   public function seed()
   {
-    $thid->seedTlds();
-    $thid->seedHostings();
-    $thid->seedServers();
-    $thid->seedEmails();
-    $thid->seedServices();
-    $thid->seedDomains();
+    $this->seedTlds();
+    $this->seedHostings();
+    $this->seedServers();
+    $this->seedEmails();
+    $this->seedServices();
+    $this->seedDomains();
   }
 
   public function seedAll()
   {
     \HiveAlpha::seedAdmin();
-    $thid->seed();
+    $this->seed();
+      \HiveCommunity::seed();
+      \HiveNewsletter::seed();
   }
 
   public function seedTlds()

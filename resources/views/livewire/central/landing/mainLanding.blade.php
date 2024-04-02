@@ -1,8 +1,9 @@
 <div class="">
-  <x-six-core-central-landing-top />
-  <x-six-core-central-landing-features />
-  <x-six-core-central-landing-presentation />
-  <x-six-core-central-landing-smb />
-  <x-six-core-central-landing-domain />
-  <x-six-core-central-landing-faq />
+  <x-hive-display-page component='topLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='businessOnRailLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='featuresLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='presentationLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='smbLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='domainLanding' base='six-core::components' source='central.landing' />
+  <x-hive-display-page component='faqLanding' base='six-core::components' source='central.landing' />
 </div>

@@ -25,7 +25,7 @@
               <x-hive-display-nav
                 base='six-core::components'
                 source='partials.navigations.main.operation'
-                component="operationNav" />
+                component="simpleNav" />
               <main id="main">
                 {{ $slot }}
               </main>

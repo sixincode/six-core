@@ -33,7 +33,10 @@
           </svg>
              <!-- Page Content -->
             <div class="flex-1 flex-col ">
-              <x-hive-display-nav  />
+              <x-hive-display-nav
+                base='six-core::components'
+                source='partials.navigations.main.operation'
+                component="simpleNav" />
               <main id="main">
                 {{ $slot }}
               </main>

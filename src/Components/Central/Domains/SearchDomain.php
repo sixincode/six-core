@@ -2,12 +2,23 @@
 
 namespace Sixincode\SixCore\Components\Central\Domains;
 
-use Illuminate\View\Component;
+use Sixincode\HiveDisplay\Components\Base\CardTemplateElement;
 
-class SearchDomain extends Component
+class SearchDomain extends CardTemplateElement
 {
-  public function render()
+  public function setDefaultSource()
   {
-      return view('six-core::components.central.domains.searchDomain');
+    return $this->source = config('six-core.defaultViews.searchDomainSource');
   }
+
+  public function setDefaultComponent()
+  {
+    return $this->component = config('six-core.defaultViews.searchDomainComponent');
+  }
+
+  public function setDefaultBase()
+  {
+    return $this->base = config('six-core.defaultViewsBase');
+  }
+
 }

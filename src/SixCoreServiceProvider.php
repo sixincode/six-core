@@ -19,7 +19,7 @@ class SixCoreServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('six-core')
-            ->hasConfigFile(['six-core','six-core-middlewares'])
+            ->hasConfigFile(['six-core','six-core-middlewares','six-core-features'])
             ->hasViews()
             ->hasAssets()
             ->hasTranslations()

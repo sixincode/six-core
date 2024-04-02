@@ -18,11 +18,24 @@ class WhoisDomainController extends Controller
   public function whoisDomainsCheck(CheckDomainRequest $request)
   {
     // dd($request);
-    $data = whois()->lookupData( $request['domain_search']);
+    $data =  null;
+    //
+    // // Checking availability
+    // if (whoisInit()->isDomainAvailable($request['domain_search'])) {
+    //     $available =  true;
+    // }
+
+    $available = whoisInit()->isDomainAvailable($request['domain_search']);
+    if(!$available){
+      $data = whois()->lookupData( $request['domain_search']);
+    }
     // $data = Http::get(route('api.msx-namecheap.central.domains.check', $request['domain_search']));
     // dd($data);
     return view('six-core::central.domains.whois.whoisDomainsResult', [
-      'data' => $data,
+      'data'      =>  $data,
+      'available' =>  $available,
+      'domain'    =>  $request['domain_search'],
+
     ]);
   }
 

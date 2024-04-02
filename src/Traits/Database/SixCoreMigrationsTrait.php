@@ -16,6 +16,8 @@ trait SixCoreMigrationsTrait
   {
     \HiveAlpha::migrateUp();
     \HivePosts::migrateUp();
+    \HiveCommunity::migrateUp();
+    \HiveNewsletter::migrateUp();
     $this->migrateUp();
   }
 
