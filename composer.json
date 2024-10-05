@@ -4,8 +4,9 @@
     "keywords": [
         "sixincode",
         "laravel",
+        "filament",
         "six-core"
-    ],
+    ],   
     "homepage": "https://github.com/sixincode/six-core",
     "license": "MIT",
     "authors": [
